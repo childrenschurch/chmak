@@ -16,7 +16,7 @@ export class CardGeneratorComponent {
   downloadAsPDF() {
     const cardElement = document.getElementById('card') as HTMLElement;
 
-    html2canvas(cardElement, { scale: 2 }).then((canvas) => {
+    html2canvas(cardElement, { scale: 1.5 }).then((canvas) => {
       const imgData = canvas.toDataURL('image/png');
       const pdf = new jsPDF('landscape', 'px', [842, 595]);
       const imgWidth = 842;
@@ -29,7 +29,7 @@ export class CardGeneratorComponent {
   downloadAsImage() {
     const cardElement = document.getElementById('card') as HTMLElement;
 
-    html2canvas(cardElement, { scale: 2 }).then((canvas) => {
+    html2canvas(cardElement, { scale: 1.5 }).then((canvas) => {
       const imgData = canvas.toDataURL('image/png');
       const link = document.createElement('a');
       link.href = imgData;
