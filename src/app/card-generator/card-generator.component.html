@@ -1,0 +1,33 @@
+<h1 class="text-center p-3">CARD CREATOR</h1>
+<div class="row justify-content-center">
+  <!-- Center the content -->
+  <div class="col-md-8 col-lg-6">
+    <!-- Adjust column size for responsiveness -->
+    <div class="card-container text-center">
+      <input
+        type="text"
+        [(ngModel)]="guestName"
+        placeholder="Enter Guest Name"
+        class="form-control text-center border-3 border-dark"
+      />
+
+      <div id="card" class="card-preview position-relative my-3">
+        <!-- Added position-relative -->
+        <img
+          src="bg3.png"
+          alt="Card Background"
+          class="card-background img-fluid"
+        />
+        <div class="card-text position-absolute">{{ guestName }}</div>
+        <!-- Added position-absolute for centering text -->
+      </div>
+
+      <button class="btn btn-success m-1" (click)="downloadAsPDF()">
+        Download as PDF
+      </button>
+      <button class="btn btn-dark m-1" (click)="downloadAsImage()">
+        Download as Image
+      </button>
+    </div>
+  </div>
+</div>
