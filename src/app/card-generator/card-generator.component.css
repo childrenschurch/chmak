@@ -21,9 +21,10 @@
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   text-align: center;
   width: 100%;
-  padding: 0 10px;
+  padding: 10px;
   box-sizing: border-box;
 }
 
@@ -31,4 +32,20 @@
   .card-text {
     font-size: 1.5rem;
   }
+  .heading {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(14, 106, 69);
+    color: rgb(216, 255, 239);
+    margin: 20px !important;
+  }
+  input {
+  }
+}
+
+.heading {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(14, 106, 69);
+  color: rgb(216, 255, 239);
 }
